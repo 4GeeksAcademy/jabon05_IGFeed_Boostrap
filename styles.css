@@ -1,0 +1,31 @@
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.header_left{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.caption_symbols{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.symbol_items{
+  border-color: gray;
+  background-color: lightgray;
+}
