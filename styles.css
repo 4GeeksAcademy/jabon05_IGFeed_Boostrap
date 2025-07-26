@@ -7,6 +7,15 @@
     "wdth" 100;
 }
 
+a{
+  text-decoration: none;
+  color: gray;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
 .header_left{
   display: flex;
   justify-content: space-between;
@@ -29,3 +38,9 @@
   border-color: gray;
   background-color: lightgray;
 }
+
+.sel_menu{
+  justify-items: center;
+  align-items: center;
+}
+
