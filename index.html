@@ -13,137 +13,112 @@
     <title>Instagram Feed</title>
 </head>
 <body>
-    <div>
-        <!-- Navbar -->       
-        <nav class="navbar navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <div>
-                        <i class="fa-brands fa-instagram fa-xl"></i>
-                        <strong>Instagram</strong>
-                    </div>
-                </a>
-                <div class="settings m-3">     
-                    <!-- Button and Modal -->
-                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Create a new post
-                    </button>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <nav class="navbar navbar-light bg-light">                  <!-- Navbar -->  
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <div>
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                    <strong>Instagram</strong>
+                </div>
+            </a>
+            <div class="settings m-3">                          <!-- Button and Modal -->
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create a new post
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label"> <strong>Caption:</strong> </label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Add the caption of your post here"></textarea>
                                 </div>
-                                <div class="modal-body">
-                                    <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label"> <strong>Caption:</strong> </label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Add the caption of your post here"></textarea>
-                                    </div>
-                                    <div class="caption_symbols">
-                                        <div class="border rounded bg-light"><i class="fa-solid fa-camera fa-xl"></i></div>
-                                        <div class="border rounded bg-light"><i class="fa-solid fa-location-dot fa-xl"></i></div>
-                                    </div>
+                                <div class="caption_symbols">
+                                    <div class="border rounded bg-light"><i class="fa-solid fa-camera fa-xl"></i></div>
+                                    <div class="border rounded bg-light"><i class="fa-solid fa-location-dot fa-xl"></i></div>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-success">Publish</button>
-                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
                             </div>
                         </div>
                     </div>
-                    <!-- Dropdown -->
-                    <div class="dropdown pe-5 mx-5">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-gear fa-xl"></i>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Accessibility</a></li>
-                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item link-danger" href="#">Log out</a></li>
-                        </ul>
-                    </div>
+                </div>
+                <!-- Dropdown -->
+                <div class="dropdown pe-5 mx-5">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-gear fa-xl"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item link-danger" href="#">Log out</a></li>
+                    </ul>
                 </div>
             </div>
-        </nav>         
-        <!-- Navbar END -->   
-        <!-- Menu --> 
-             <div class="d-grid justify-content-center row">
-                <div class="col-12 sel_menu">
-                    <a href="/index.html"><i class="fa-solid fa-grip fa-xl"></i></a>
-                    <a href="/inline.html"><i class="fa-solid fa-square fa-xl"></i></a>
+        </div>
+    </nav>          
+    <div class="d-grid justify-content-center row m-4">         <!-- Menu --> 
+        <div class="col-12 sel_menu">
+            <a href="/index.html"><i class="fa-solid fa-grip fa-xl"></i></a>
+            <a href="/inline.html"><i class="fa-solid fa-square fa-xl"></i></a>
+        </div>
+    </div>
+    <div class="container">                                     <!-- GRID -->
+        <div class="d-flex align-items-center row">
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1748807810387-9715ccbb10d5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDR8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
                 </div>
             </div>
-        <!-- GRID --> 
-            <div class="row">
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://images.unsplash.com/photo-1682687982134-2ac563b2228b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://plus.unsplash.com/premium_photo-1752031893760-65fff1514e28?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDd8eEh4WVRNSExnT2N8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://images.unsplash.com/photo-1752654976656-d713bb2bc2a3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDIyfHhIeFlUTUhMZ09jfHxlbnwwfHx8fHw%3D" class="card-img-top" alt="...">
-                    </div>
-                </div>           
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://images.unsplash.com/photo-1752654977065-a9cc9593c0b9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI2fHhIeFlUTUhMZ09jfHxlbnwwfHx8fHw%3D" class="card-img-top" alt="...">
-                    </div>
-                </div>                
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://images.unsplash.com/photo-1744059509939-866e0fb167c6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDU1fHhIeFlUTUhMZ09jfHxlbnwwfHx8fHw%3D" class="card-img-top" alt="...">
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://images.unsplash.com/photo-1752403719430-b0171b5c6bea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDY2fHhIeFlUTUhMZ09jfHxlbnwwfHx8fHw%3D" class="card-img-top" alt="...">
-                    </div>
-                </div>
-                 <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://images.unsplash.com/photo-1752157660525-fc5305247dd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDc5fHhIeFlUTUhMZ09jfHxlbnwwfHx8fHw%3D" class="card-img-top" alt="...">
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://images.unsplash.com/photo-1751495197076-4b55c3337a67?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDcyfHhIeFlUTUhMZ09jfHxlbnwwfHx8fHw%3D" class="card-img-top" alt="...">
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://images.unsplash.com/photo-1752160022017-651bc6640079?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDgxfHhIeFlUTUhMZ09jfHxlbnwwfHx8fHw%3D" class="card-img-top" alt="...">
-                    </div>
+            <div class="col-4">
+                <div class="card " style="width: 18rem;">
+                    <img src="https://plus.unsplash.com/premium_photo-1721669059249-9007d1329d9a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDF8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D" class="card-img-top img-fluid" alt="...">
                 </div>
             </div>
-</div>  
-
-
-
-
-
-
-        
-
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://plus.unsplash.com/premium_photo-1752742646492-88cbb660792c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfHhIeFlUTUhMZ09jfHxlbnwwfHx8fHw%3D" class="card-img-top float-left" alt="...">
+                </div>
+            </div>           
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1752654977065-a9cc9593c0b9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI2fHhIeFlUTUhMZ09jfHxlbnwwfHx8fHw%3D" class="card-img-top" alt="...">
+                </div>
+            </div>                
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1744059509939-866e0fb167c6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDU1fHhIeFlUTUhMZ09jfHxlbnwwfHx8fHw%3D" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1752403719430-b0171b5c6bea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDY2fHhIeFlUTUhMZ09jfHxlbnwwfHx8fHw%3D" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1752157660525-fc5305247dd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDc5fHhIeFlUTUhMZ09jfHxlbnwwfHx8fHw%3D" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1752654977044-db2cffbbebfc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDIxfHhIeFlUTUhMZ09jfHxlbnwwfHx8fHw%3D" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1752160022017-651bc6640079?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDgxfHhIeFlUTUhMZ09jfHxlbnwwfHx8fHw%3D" class="card-img-top" alt="...">
+                </div>
+            </div>
+        </div>
     </div>
 </body>
-
-
-
-
-
-
-
-
-
-
-
 </html>

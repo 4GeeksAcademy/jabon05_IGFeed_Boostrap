@@ -9,7 +9,12 @@
 
 a{
   text-decoration: none;
-  color: gray;
+  color: black;
+}
+
+.likes{
+  margin-top: 5px;
+  font-weight: bold;
 }
 
 .container{
@@ -44,3 +49,8 @@ a{
   align-items: center;
 }
 
+.gridcards{
+  object-fit: cover;
+  object-position: 50% 50%;
+  transform: scale(1);
+}
